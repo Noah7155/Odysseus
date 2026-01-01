@@ -1,7 +1,6 @@
-use crate::engine::start;
-
-mod engine;
+use Odysseus::engine::{start, Game, Screen};
 
 fn main() {
-    start();
+    let game = Game { screen: Screen::Title };
+    start(game);
 }
